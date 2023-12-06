@@ -17,6 +17,7 @@ function Login({ setIsLoggedIn, setLoginAttemptFailed }) {
 
   return (
     <div className="form-container">
+      <h1>Welcome, please log in</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-field">
           <label>Username:</label>
