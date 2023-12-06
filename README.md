@@ -1,5 +1,8 @@
 # user:cfg pw:2023
 
+## How to start:
+### In a terminal run command 'npm install' then run npm start
+
 ## Available Scripts
 
 In the project directory, you can run:
