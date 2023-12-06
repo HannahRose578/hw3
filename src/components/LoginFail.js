@@ -1,6 +1,6 @@
 // LoginFail.js
 import React from "react";
-import styles from "./Styles.css";
+import "./Styles.css";
 
 function LoginFail({ setLoginAttemptFailed }) {
   return (
