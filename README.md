@@ -3,6 +3,8 @@
 ## How to start:
 ### In a terminal run command 'npm install' then run npm start
 
+# Also available hosted statically on my server: https://hw3.winterrose.uk/
+
 ## Available Scripts
 
 In the project directory, you can run:
