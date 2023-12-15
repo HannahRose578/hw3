@@ -1,17 +1,19 @@
-// Login.js
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { loginSuccess, loginFail } from "./authSlice";
 import "./Styles.css";
 
-function Login({ setIsLoggedIn, setLoginAttemptFailed }) {
+function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (username === "cfg" && password === "2023") {
-      setIsLoggedIn(true);
+      dispatch(loginSuccess());
     } else {
-      setLoginAttemptFailed(true);
+      dispatch(loginFail());
     }
   };
 

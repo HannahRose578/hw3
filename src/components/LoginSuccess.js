@@ -1,14 +1,17 @@
-// LoginSuccess.js
 import React from "react";
-import "./Styles.css"; // Ensure the correct path is set
+import { useDispatch } from "react-redux";
+import { logout } from "./authSlice";
+import "./Styles.css";
 
-function LoginSuccess({ setIsLoggedIn }) {
+function LoginSuccess() {
+  const dispatch = useDispatch();
+
   return (
     <div className="LoginSuccess-container">
       <h1>Welcome! You have successfully logged in.</h1>
       <button
         className="LoginSuccess-button"
-        onClick={() => setIsLoggedIn(false)}
+        onClick={() => dispatch(logout())}
       >
         Logout
       </button>
